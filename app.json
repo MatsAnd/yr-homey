@@ -1,0 +1,28 @@
+{
+  "id": "no.matsa.yr",
+  "version": "1.0.0",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "Yr"
+  },
+  "description": {
+    "en": "Get the weather forecast from Yr, the weather service by Norwegian Meteorological Institute and the Norwegian Broadcasting Corporation",
+    "no": "Integrerer værmeldingen nær deg med Homey!"
+  },
+  "category": [
+    "climate",
+    "tools",
+    "localization"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "brandColor": "#00b8f1",
+  "author": {
+    "name": "Mats Andreassen",
+    "email": "mats.andreassen@hotmail.com"
+  }
+}
