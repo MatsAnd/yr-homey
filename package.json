@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "app.js",
   "devDependencies": {
-    "homey": "2.3.3"
+    "homey": "2.3.3",
+    "standard": "14.3.4"
   },
   "dependencies": {
     "yr-forecast": "1.0.0"
