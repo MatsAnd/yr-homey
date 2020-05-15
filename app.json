@@ -8,7 +8,7 @@
   },
   "description": {
     "en": "Get the weather forecast from Yr, the weather service by Norwegian Meteorological Institute and the Norwegian Broadcasting Corporation",
-    "no": "Integrerer værmeldingen nær deg med Homey!"
+    "no": "Integrerer værmeldingen fra Yr med Homey!"
   },
   "category": [
     "climate",
