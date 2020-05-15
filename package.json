@@ -4,5 +4,8 @@
   "main": "app.js",
   "devDependencies": {
     "homey": "2.3.3"
+  },
+  "dependencies": {
+    "yr-forecast": "1.0.0"
   }
 }
