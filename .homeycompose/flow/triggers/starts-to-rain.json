@@ -1,0 +1,49 @@
+{
+  "id": "starts-to-rain",
+  "title": {
+    "en": "It starts to rain",
+    "no": "Det begynner å regne"
+  },
+  "hint": {
+    "en": "Flow is triggered when it starts to rain whitin the minute",
+    "no": "Flyten kjøres når det starter å regne innen ett minutt"
+  },
+  "tokens": [
+    {
+      "type": "number",
+      "name": "millimeters",
+      "title": {
+        "en": "Millimeters of rain",
+        "no": "Millimeter nedbør"
+      },
+      "example": {
+        "en": "How many millimeters of rain is forecasted during the rain shower?",
+        "no": "Hvor mange millimeter nedbør er forventet?"
+      }
+    },
+    {
+      "type": "number",
+      "name": "startsIn",
+      "title": {
+        "en": "Starts in (seconds)",
+        "no": "Starter om (sekunder)"
+      },
+      "example": {
+        "en": "How many seconds until it's precipitated to start raining?",
+        "no": "Hvor mange sekunder er det til det er forventet at det kommer regn?"
+      }
+    },
+    {
+      "type": "number",
+      "name": "duration",
+      "title": {
+        "en": "Rain duration (minutes)",
+        "no": "Varighet (minutter)"
+      },
+      "example": {
+        "en": "For how long is it precipiated to rain? (In segments of five - 5, 10, 15, etc.)",
+        "no": "Hvor lenge er det forventet å regne? (I fem-minutters segmenter - 5, 10, 15, osv.)"
+      }
+    }
+  ]
+}

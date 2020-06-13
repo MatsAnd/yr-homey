@@ -5,26 +5,24 @@ const app = require('./app.json')
 
 class Yr extends Homey.App {
   onInit () {
-    this.log(`${app.name.en} version ${app.version} is running...`)
+    this.log(`${app.name.en} version ${app.version} is running!`)
 
-    // Register flow cards
-    this.registerTriggers()
-    this.registerConditions()
-  }
+    // Instantiate handlers
+    this.log('App - Instantiate handlers...')
+    this.Nowcast = require('./handlers/nowcast-handler')(this)
 
-  registerTriggers () {
-    this.log('Registering triggers...')
-    new Homey.FlowCardTrigger('starts_to_rain').register()
-  }
-
-  registerConditions (conditions) {
-    this.log(`Registering ${conditions ? conditions.length : 'none'} conditions!`)
-
-    conditions.forEach(condition => {
-      this.log(`Registering condition ${condition}...`)
-      new Homey.FlowCardCondition(condition).register()
-      this.log(`Registered condition ${condition}!`)
+    // @ts-ignore
+    Homey.on('unload', async () => {
+      await this.unregisterTasks()
     })
+  }
+
+  async unregisterTasks () {
+    const currentTasks = await Homey.ManagerCron.getTasks()
+    if (currentTasks && currentTasks.length > 0) {
+      this.log(`App - Unregistering ${currentTasks.length} existing cron jobs...`)
+      await Homey.ManagerCron.unregisterAllTasks()
+    }
   }
 }
 
