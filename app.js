@@ -10,6 +10,7 @@ class Yr extends Homey.App {
     // Instantiate handlers
     this.log('App - Instantiate handlers...')
     this.Nowcast = require('./handlers/nowcast-handler')(this)
+    this.Forecast = require('./handlers/forecast-handler')(this)
 
     // @ts-ignore
     Homey.on('unload', async () => {
