@@ -1,10 +1,11 @@
 {
   "id": "no.matsa.yr",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "compatibility": ">=1.5.0",
   "sdk": 2,
   "name": {
-    "en": "Yr"
+    "en": "Yr",
+    "no": "Yr"
   },
   "description": {
     "en": "Get the weather forecast from Yr, the weather service by Norwegian Meteorological Institute and the Norwegian Broadcasting Corporation",
@@ -12,8 +13,7 @@
   },
   "category": [
     "climate",
-    "tools",
-    "localization"
+    "tools"
   ],
   "permissions": [],
   "images": {
@@ -24,5 +24,58 @@
   "author": {
     "name": "Mats Andreassen",
     "email": "mats.andreassen@hotmail.com"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "starts-to-rain",
+        "title": {
+          "en": "It starts to rain",
+          "no": "Det begynner å regne"
+        },
+        "hint": {
+          "en": "Flow is triggered when it starts to rain whitin the minute",
+          "no": "Flyten kjøres når det starter å regne innen ett minutt"
+        },
+        "tokens": [
+          {
+            "type": "number",
+            "name": "millimeters",
+            "title": {
+              "en": "Millimeters of rain",
+              "no": "Millimeter nedbør"
+            },
+            "example": {
+              "en": "How many millimeters of rain is forecasted during the rain shower?",
+              "no": "Hvor mange millimeter nedbør er forventet?"
+            }
+          },
+          {
+            "type": "number",
+            "name": "startsIn",
+            "title": {
+              "en": "Starts in (seconds)",
+              "no": "Starter om (sekunder)"
+            },
+            "example": {
+              "en": "How many seconds until it's precipitated to start raining?",
+              "no": "Hvor mange sekunder er det til det er forventet at det kommer regn?"
+            }
+          },
+          {
+            "type": "number",
+            "name": "duration",
+            "title": {
+              "en": "Rain duration (minutes)",
+              "no": "Varighet (minutter)"
+            },
+            "example": {
+              "en": "For how long is it precipiated to rain?",
+              "no": "Hvor lenge er det forventet å regne?"
+            }
+          }
+        ]
+      }
+    ]
   }
 }
