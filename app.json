@@ -46,8 +46,8 @@
               "no": "Millimeter nedbør"
             },
             "example": {
-              "en": "How many millimeters of rain is forecasted during the rain shower?",
-              "no": "Hvor mange millimeter nedbør er forventet?"
+              "en": "4.3 mm",
+              "no": "4.3 mm"
             }
           },
           {
@@ -58,8 +58,8 @@
               "no": "Starter om (sekunder)"
             },
             "example": {
-              "en": "How many seconds until it's precipitated to start raining?",
-              "no": "Hvor mange sekunder er det til det er forventet at det kommer regn?"
+              "en": "13 seconds",
+              "no": "13 sekunder"
             }
           },
           {
@@ -70,8 +70,8 @@
               "no": "Varighet (minutter)"
             },
             "example": {
-              "en": "For how long is it precipiated to rain? (In segments of five - 5, 10, 15, etc.)",
-              "no": "Hvor lenge er det forventet å regne? (I fem-minutters segmenter - 5, 10, 15, osv.)"
+              "en": "15 minutes",
+              "no": "15 minutter"
             }
           }
         ]
