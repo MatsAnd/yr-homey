@@ -1,3 +1,11 @@
 {
-  
+  "textcast": {
+    "tokens": {
+      "textcast-1": "Today's text forecast",
+      "textcast-2": "Tomorrow's text forecast",
+      "textcast-3": "The day after tomorrow's text forecast",
+      "textcast-4": "The day after the day after tomorrow's text forecast",
+      "textcast-updated": "Text forecast updated at"
+    }
+  }
 }

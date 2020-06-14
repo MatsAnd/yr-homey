@@ -11,6 +11,7 @@ class Yr extends Homey.App {
     this.log('App - Instantiate handlers...')
     this.Nowcast = require('./handlers/nowcast-handler')(this)
     this.Forecast = require('./handlers/forecast-handler')(this)
+    this.TextForecast = require('./handlers/text-forecast-handler')(this)
 
     // @ts-ignore
     Homey.on('unload', async () => {
