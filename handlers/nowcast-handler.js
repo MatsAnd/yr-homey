@@ -65,7 +65,7 @@ module.exports = async (app) => {
     }
   }
 
-  // Register flow carts and cron jobs on init!
+  // Register flow cards and cron jobs on init!
   await registerFlowCards()
   await registerTasks()
 }
