@@ -10,6 +10,6 @@
     "standard": "14.3.4"
   },
   "dependencies": {
-    "yr-forecast": "1.0.0"
+    "yr-forecast": "1.0.3"
   }
 }
