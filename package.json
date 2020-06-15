@@ -10,6 +10,7 @@
     "standard": "14.3.4"
   },
   "dependencies": {
+    "moment": "2.26.0",
     "yr-forecast": "1.0.3"
   }
 }

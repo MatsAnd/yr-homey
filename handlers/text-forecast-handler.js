@@ -3,6 +3,7 @@ const { getTextForecast } = require('yr-forecast')
 const { TEXT_FORECAST } = require('../config')
 const getLocation = require('../lib/get-location')
 const repackTextForecast = require('../lib/text-forecast-repack')
+const moment = require('moment')
 
 let currentTextForecast = {}
 const flowTokens = []
@@ -75,7 +76,8 @@ module.exports = async (app) => {
         token.setValue(currentTextForecast[3].forecast)
       }
       if (token.id === 'textcast-updated') {
-        token.setValue(new Date().toLocaleString())
+        const formattedDate = moment().format(Homey.__('dateformat'))
+        token.setValue(formattedDate)
       }
     })
 

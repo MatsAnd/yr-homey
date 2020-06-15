@@ -1,4 +1,5 @@
 {
+  "dateformat": "YYYY-MM-DD hh:mm a",
   "textcast": {
     "tokens": {
       "textcast-1": "Today's text forecast",
