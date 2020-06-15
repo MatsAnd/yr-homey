@@ -22,7 +22,7 @@ module.exports = {
   TEXT_FORECAST: {
     UPDATE_CRON: {
       ID: 'no.matsa.yr.cron_updateTextForecast',
-      SCHEDULE: '0 */1 * * *' // Every 1 hour
+      SCHEDULE: '59 */1 * * *' // Every 1 hour at minute 59
     }
   }
 }
