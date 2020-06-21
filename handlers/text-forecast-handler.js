@@ -44,7 +44,7 @@ module.exports = async (app) => {
     }
 
     // Gather som initial data...
-    update()
+    await update()
   }
 
   const update = async () => {
