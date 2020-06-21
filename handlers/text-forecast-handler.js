@@ -76,7 +76,7 @@ module.exports = async (app) => {
         token.setValue(currentTextForecast[3].forecast)
       }
       if (token.id === 'textcast-updated') {
-        const formattedDate = moment().format(Homey.__('dateformat'))
+        const formattedDate = moment().format(Homey.__('moment.date'))
         token.setValue(formattedDate)
       }
     })

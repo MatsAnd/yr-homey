@@ -1,5 +1,8 @@
 {
-  "dateformat": "DD.MM.YYYY HH:mm:ss,SSS",
+  "moment": {
+    "locale": "nb",
+    "date": "DD.MM.YYYY HH:mm:ss,SSS"
+  },
   "tokens": {
     "textcast-1": "Dagens tekstvarsel",
     "textcast-2": "Tekstvarsel for i morgen",
