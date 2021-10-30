@@ -13,7 +13,7 @@
         "standard": "14.3.4"
     },
     "dependencies": {
-        "moment": "2.26.0",
+        "moment": "2.29.1",
         "yr-forecast": "1.0.3"
     },
     "scripts": {
