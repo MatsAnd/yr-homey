@@ -26,5 +26,45 @@
     },
     "bugs": {
         "url": "https://github.com/MatsAnd/yr-homey/issues"
+    },
+    "renovate": {
+        "extends": [
+            "config:base",
+            ":disableDependencyDashboard"
+        ],
+        "separateMultipleMajor": true,
+        "separateMinorPatch": true,
+        "ignoreUnstable": true,
+        "timezone": "Europe/Oslo",
+        "assigneesFromCodeOwners": true,
+        "assigneesSampleSize": 1,
+        "stabilityDays": 2,
+        "labels": [
+            "dependencies"
+        ],
+        "vulnerabilityAlerts": {
+            "labels": [
+                "security"
+            ]
+        },
+        "commitBody": "Dependency update (patch)",
+        "packageRules": [{
+                "automerge": true,
+                "matchUpdateTypes": [
+                    "patch",
+                    "pin",
+                    "digest"
+                ]
+            },
+            {
+                "automerge": true,
+                "matchDepTypes": [
+                    "devDependencies",
+                    "peerDependencies",
+                    "optionalDependencies"
+                ]
+            }
+        ],
+        "dependencyDashboard": false
     }
 }
