@@ -9,11 +9,11 @@
         "node": ">=12.16.1"
     },
     "devDependencies": {
-        "homey": "2.3.5",
+        "homey": "2.23.3",
         "standard": "16.0.4"
     },
     "dependencies": {
-        "moment": "2.29.1",
+        "moment": "2.26.0",
         "yr-forecast": "1.0.3"
     },
     "scripts": {
