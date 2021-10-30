@@ -1,16 +1,30 @@
 {
-  "name": "no.matsa.yr",
-  "version": "0.1.0",
-  "main": "app.js",
-  "engines": {
-    "node": ">=12.16.1"
-  },
-  "devDependencies": {
-    "homey": "2.3.5",
-    "standard": "14.3.4"
-  },
-  "dependencies": {
-    "moment": "2.26.0",
-    "yr-forecast": "1.0.3"
-  }
+    "name": "no.matsa.yr",
+    "description": "Get the weather forecast from Yr, the weather service by Norwegian Meteorological Institute and the Norwegian Broadcasting Corporation",
+    "version": "0.1.0",
+    "author": "Mats Andreassen <matsand@live.no> (https://github.com/matsand)",
+    "license": "MIT",
+    "main": "app.js",
+    "engines": {
+        "node": ">=12.16.1"
+    },
+    "devDependencies": {
+        "homey": "2.3.5",
+        "standard": "14.3.4"
+    },
+    "dependencies": {
+        "moment": "2.26.0",
+        "yr-forecast": "1.0.3"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "homepage": "https://github.com/MatsAnd/yr-homey#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MatsAnd/yr-homey.git"
+    },
+    "bugs": {
+        "url": "https://github.com/MatsAnd/yr-homey/issues"
+    }
 }
