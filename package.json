@@ -9,7 +9,7 @@
         "node": ">=12.16.1"
     },
     "devDependencies": {
-        "homey": "2.25.1",
+        "homey": "2.26.0",
         "standard": "16.0.4"
     },
     "dependencies": {
