@@ -10,7 +10,7 @@
     },
     "devDependencies": {
         "homey": "2.28.1",
-        "standard": "16.0.4"
+        "standard": "17.0.0"
     },
     "dependencies": {
         "moment": "2.26.0",
