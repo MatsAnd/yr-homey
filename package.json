@@ -14,6 +14,7 @@
     },
     "dependencies": {
         "moment": "2.29.4",
+        "eslint-config-athom": "3.1.1",
         "yr-forecast": "1.0.3"
     },
     "scripts": {
