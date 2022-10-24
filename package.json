@@ -9,7 +9,15 @@
         "node": ">=12.16.1"
     },
     "devDependencies": {
+        "@tsconfig/node12": "1.0.11",
+        "@types/homey": "npm:homey-apps-sdk-v3-types@0.3.1",
+        "@types/jest": "29.2.0",
+        "@types/node": "17.0.24",
+        "browserify": "17.0.0",
+        "eslint": "8.25.0",
+        "eslint-config-athom": "3.1.1",
         "homey": "2.30.6",
+        "jest": "29.2.1",
         "standard": "17.0.0"
     },
     "dependencies": {
@@ -17,7 +25,14 @@
         "yr-forecast": "1.0.3"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "standard && env TZ=UTC jest",
+        "fix": "standard --fix",
+        "ts:lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
+        "refresh": "rm -rf node_modules/ && rm package-lock.json && npm i",
+        "homey-build": "browserify lib/variable-management.js --standalone variableMgmt -o settings/variable-management.js && homey app build",
+        "homey-run": "npm run homey-build && homey app run",
+        "homey-install": "npm run test && npm run homey-build && homey app install",
+        "homey-publish": "npm run test && npm run homey-build && npm run fix && homey app publish"
     },
     "homepage": "https://github.com/MatsAnd/yr-homey#readme",
     "repository": {
@@ -66,5 +81,23 @@
             }
         ],
         "dependencyDashboard": false
-    }
+    },
+    "standard": {
+        "ignore": [
+            "settings/*.js"
+        ],
+        "env": [
+            "jest"
+        ]
+    },
+    "jest": {
+        "modulePathIgnorePatterns": [
+          "<rootDir>/build/",
+          "<rootDir>/.homeybuild/"
+        ],
+        "testMatch": [
+          "**/tests/**/*test.[jt]s?(x)",
+          "**/?(*.)+.(spec|test).[jt]s?(x)"
+        ]
+      }
 }
