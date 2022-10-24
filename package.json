@@ -25,7 +25,14 @@
         "yr-forecast": "1.0.3"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "standard && env TZ=UTC jest",
+        "fix": "standard --fix",
+        "ts:lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
+        "refresh": "rm -rf node_modules/ && rm package-lock.json && npm i",
+        "homey-build": "browserify lib/variable-management.js --standalone variableMgmt -o settings/variable-management.js && homey app build",
+        "homey-run": "npm run homey-build && homey app run",
+        "homey-install": "npm run test && npm run homey-build && homey app install",
+        "homey-publish": "npm run test && npm run homey-build && npm run fix && homey app publish"
     },
     "homepage": "https://github.com/MatsAnd/yr-homey#readme",
     "repository": {
@@ -92,5 +99,5 @@
           "**/tests/**/*test.[jt]s?(x)",
           "**/?(*.)+.(spec|test).[jt]s?(x)"
         ]
-    }
+      }
 }
