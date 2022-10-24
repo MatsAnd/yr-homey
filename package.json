@@ -66,5 +66,10 @@
             }
         ],
         "dependencyDashboard": false
+    },
+    "standard": {
+        "ignore": [
+            "settings/*.js"
+        ]
     }
 }
