@@ -78,6 +78,19 @@
     "standard": {
         "ignore": [
             "settings/*.js"
+        ],
+        "env": [
+            "jest"
+        ]
+    },
+    "jest": {
+        "modulePathIgnorePatterns": [
+          "<rootDir>/build/",
+          "<rootDir>/.homeybuild/"
+        ],
+        "testMatch": [
+          "**/tests/**/*test.[jt]s?(x)",
+          "**/?(*.)+.(spec|test).[jt]s?(x)"
         ]
     }
 }
