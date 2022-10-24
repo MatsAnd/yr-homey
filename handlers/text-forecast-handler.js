@@ -17,7 +17,7 @@ module.exports = async (app) => {
 
       const flowTokenIds = ['textcast-1', 'textcast-2', 'textcast-3', 'textcast-4', 'textcast-updated']
       flowTokenIds.map(id => {
-        new Homey.FlowToken(id, { type: 'string', title: Homey.__(`tokens.${id}`) })
+        return new Homey.FlowToken(id, { type: 'string', title: Homey.__(`tokens.${id}`) })
           .register()
           .then(token => {
             app.log(`TextForecast - Registered token ${token.id}!`)

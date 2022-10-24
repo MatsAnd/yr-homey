@@ -49,6 +49,9 @@ module.exports = async (app) => {
 
   const trigger = async () => {
     app.log('Forecast - Checking if we should trigger...')
+
+    app.log('Forecast - Current forecast: ' + !!currentForecast)
+
     app.log('Forecast - Don\'t trigger')
   }
 
