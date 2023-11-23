@@ -11,7 +11,7 @@
     "devDependencies": {
         "@tsconfig/node12": "12.1.0",
         "@types/homey": "npm:homey-apps-sdk-v3-types@0.3.5",
-        "@types/jest": "29.5.8",
+        "@types/jest": "29.5.9",
         "@types/node": "20.9.2",
         "browserify": "17.0.0",
         "eslint": "8.54.0",
