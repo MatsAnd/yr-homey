@@ -21,7 +21,7 @@
         "standard": "17.0.0"
     },
     "dependencies": {
-        "moment": "2.29.4",
+        "moment": "2.30.1",
         "yr-forecast": "1.0.3"
     },
     "scripts": {
