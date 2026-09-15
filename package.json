@@ -18,7 +18,7 @@
         "eslint-config-athom": "3.1.5",
         "homey": "3.12.2",
         "jest": "29.7.0",
-        "standard": "17.0.0"
+        "standard": "17.1.2"
     },
     "dependencies": {
         "moment": "2.29.4",
